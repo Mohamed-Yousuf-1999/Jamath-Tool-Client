@@ -6,6 +6,7 @@
   padding: 20px;
   box-sizing: border-box;
   position: fixed;
+  margin-top: 87px;
 }
 
 .sidebar ul{
@@ -20,18 +21,13 @@ padding: 0;
 .sidebar ul li a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     display: block;
-    padding: 18px;
+    padding: 10px;
     transition: background-color 0.3s;
 }
 
 .sidebar ul li a:hover{
-background-color: #34495e;
+background-color: #4c6885;
 }
 
-.content{
-    margin-left: 220px;
-    padding: 20px;
-    box-sizing: border-box;
-}

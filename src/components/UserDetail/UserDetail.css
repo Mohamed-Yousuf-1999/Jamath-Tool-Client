@@ -1,0 +1,59 @@
+.user-detail-display {
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.user-detail {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-detail .header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px ;
+}
+.user-detail .header span {
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: 300;
+}
+
+.user-detail .header .edit-icon:hover{
+    color: rgb(204, 204, 235);
+    cursor: pointer;
+}
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #8a8a8a;
+}
+
+.detail-item .label {
+  font-weight: 400;
+  width: 40%;
+}
+
+.alive .value,
+.nonAlive .value {
+  padding: 1px 15px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  color: white;
+  font-size: 13px;
+  font-weight: 350;
+}
+
+.alive .value {
+  background-color: green;
+}
+
+.nonAlive .value {
+  background-color: rgb(109, 109, 109);
+}

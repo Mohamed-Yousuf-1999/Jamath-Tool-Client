@@ -1,0 +1,24 @@
+.user-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user-display .title{
+    font-size: 24px;
+}
+
+.user-display .add-user button{
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-display .add-user button:hover{
+    background-color: #4c6885;
+}

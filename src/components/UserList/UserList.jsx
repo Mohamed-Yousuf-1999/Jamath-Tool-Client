@@ -1,7 +1,7 @@
 import React from "react";
-import './UserList.css'
+import "./UserList.css";
 
-const UserList = ({ users }) => {
+const UserList = ({ users, onUserClick }) => {
   return (
     <table className="user-list">
       <thead>
@@ -15,10 +15,17 @@ const UserList = ({ users }) => {
       <tbody>
         {users.map((user) => (
           <tr key={user.userId}>
-            <td>{user.name}</td>
+            <td>
+              <span
+                onClick={() => onUserClick(user.userId)}
+                className="userNameLink"
+              >
+                {user.name}
+              </span>
+            </td>
             <td>{user.age}</td>
             <td>{user.fatherName}</td>
-            <td>
+            <td className="subscription">
               {user.pendingAmount}/{user.totalAmount}
             </td>
           </tr>

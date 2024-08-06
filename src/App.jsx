@@ -8,6 +8,7 @@ import { TopBar } from "./components/NavBar/TopBar";
 import "./styles/Index.css";
 import { UserFormPage } from "./pages/UserFormPage";
 import { UserDetailPage } from "./pages/UserDetailPage";
+import { UserEdit } from "./pages/UserEdit";
 const App = () => {
   return (
     <Router>
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/donations" element={<Donations />} />
             <Route path="/add-user" element={<UserFormPage title = "Add User"/>} />
             <Route path='/user-detail/:id' element={< UserDetailPage/>} />
+            <Route path ='/edit-user/:id' element={< UserEdit/>} />
           </Routes>
         </div>
       </div>

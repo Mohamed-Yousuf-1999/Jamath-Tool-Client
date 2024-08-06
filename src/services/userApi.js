@@ -17,3 +17,8 @@ export const createUser = async (userData) => {
   const response = await axios.post(`${API_BASE_URL}/users`, userData);
   return response.data;
 };
+
+export const updateUser = async (userId, userData) => {
+  const response = await axios.put(`${API_BASE_URL}/users/${userId}`, userData);
+  return response.data;
+};

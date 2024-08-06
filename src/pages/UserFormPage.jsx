@@ -10,7 +10,6 @@ export const UserFormPage = ({title}) => {
 
   const handleFormSubmit = async (userData) => {
     try {
-      console.log(userData);
       await createUser(userData);
     } catch (error) {
       console.error("Error creating user : ", error);
